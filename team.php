@@ -21,5 +21,12 @@ class Team {
 
 
     }
+    public function getGoalAverage() 
+	{
+			if ($this->totalGames == 0) {
+				return 0.0;
+			}
+			return $this->totalGoals / $this->totalGames;
+	}
 }
 ?>
